@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eba8b1;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-image: -webkit-linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+  font-family: Gilroy-Bold, sans-serif;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  box-sizing: border-box;
+
+}

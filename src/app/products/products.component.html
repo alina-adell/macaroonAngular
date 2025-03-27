@@ -1,0 +1,23 @@
+<section class="products" #productsEl>
+  <div class="container products__container">
+    <h2 class="products__title">Выберите свой макарун</h2>
+
+    <!-- Выводим карточки товаров с помощью *ngFor -->
+    <div class="product" *ngFor="let product of products; let i = index">
+      <div class="product__image">
+        <img src="../../assets/{{product.image}}" alt="Product macaroon {{i+1}}">
+      </div>
+      <div class="product__title">{{ product.title }}</div>
+      <div class="product__info">
+        <div class="product__text">
+          {{ product.price }}
+        </div>
+        <div class="product__action">
+          <button class="btn product__btn" (click)="orderProduct(product)">
+            Заказать
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

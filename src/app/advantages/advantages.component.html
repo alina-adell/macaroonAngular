@@ -1,0 +1,26 @@
+<section class="advantages">
+  <div class="container advantages__container">
+    <div class="advantages__info">
+      <h2>Мы печём для вас
+        вкуснейшие макаруны
+        уже более 10 лет</h2>
+      <div class="advantages__info-text">
+        Все пироженки мы готовим только из натуральных и качественных продуктов, без консервантов,
+        ароматизаторов, красителей. Используем в приготовлении сливочное масло 82,5%, без дрожжей, маргарина,
+        разрыхлителей и улучшителей муки.
+      </div>
+    </div>
+    <div class="advantages__image">
+      <img  class="advantages__img" src="../../assets/images/macaroonred.png" alt="Macaroonred">
+    </div>
+    <div *ngFor="let advantage of advantages; let i = index" class="advantage">
+      <div class="advantage__image">
+        <span class="elipce">{{ i + 1 }}</span>
+      </div>
+      <div class="advantage__text">
+        <div class="advantage-title">{{ advantage.title }}</div>
+        <div class="advantage__description">{{ advantage.description }}</div>
+      </div>
+    </div>
+  </div>
+</section>
